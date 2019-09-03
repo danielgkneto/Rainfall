@@ -1,0 +1,30 @@
+2. How much water runs off the roof?
+
+IPO:
+
+Input: get dimensions of the footprint of the rooftop in feet
+Processing: convert dimensions to inches; then multiply them by inches of rainfall; then convert the result from cubic inches to gallons
+Output: show amount of water that runs off a roof after a rain storm (in gallons)
+
+
+Pseudocode:
+
+Declare roof_length_in
+Declare roof_width_in
+Declare water_amount
+Declare water_amount_gal
+
+Prompt user for roof_length_ft
+Get roof_length_ft
+Prompt user for roof_width_ft
+Get roof_width_ft
+Prompt user for rainfall_in
+Get rainfall_in
+
+Calculate roof_length_in = roof_length_ft x 12
+Calculate roof_width_in = roof_width_ft x 12
+
+Calculate water_amount = roof_length_in x roof_width_in x rainfall_in
+Calculate water_amount_gal = water_amount / 231
+
+Display water_amount_gal
